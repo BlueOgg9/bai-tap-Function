@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // Bai 6
+        // var arr =[5,6,6,7,8,9,56];
+        // function soSanh() {
+        //     let a = arr[0];
+        //     for (let i = 0; i <= arr.length; i++) {
+        //         if (arr[i] > a) {
+        //             a = arr[i]
+        //         }
+        //     }
+        //     return a
+        // }
+        // soSanh()
+
+        // var a = soSanh(arr);
+        // console.log(a)
+
+
+        // Bai 7
+        // Kiem tra Chan Le
+        // var arr =[5,6,6,7,8,9,56];
+        // function soSanh() {
+        //     for (let i = 0; i <= arr.length; i++) {
+        //         if (i % 2 == 0) {
+        //             console.log(arr[i] + '- Chan')
+        //         } else {
+        //             console.log(arr[i] + '- Le')
+        //         }
+        //     }
+        //     return i
+        // }
+        // var i = soSanh(arr);
+        // console.log(i)
+
+        // Kiem tra so Nguyen To
+        // function checkNum(a) {
+        //     var check = true;
+        //     if (a<2) {
+        //         check = false;
+        //     } else {
+        //         for (var i = 2; i < a-1; i++) {
+        //             if (a % i == 0) {
+        //                 check = false;
+        //                 break;
+        //             }
+        //         }
+        //     }
+        // }
+
+        // var arr =[5,6,6,7,8,9,56,17,15];
+        // for (let i = 0; i <= arr.length; i++) {
+        //     if (checkNum(arr[i])) {
+        //         console.log(arr[i] + ' - Là số nguyên tố')
+        //     } else {
+        //         console.log(arr[i] + ' - Không phải số nguyên tố')
+        //     }
+        // }        
+
+        // Số Hoàn Hảo
+
+        // function checkNum(b) {
+        //     let sum = 0;
+        //     for (let i = 1; i < b; i++) {
+        //         if (b % i == 0) {
+        //             sum = sum + i;
+        //         }
+        //     }
+        //     if (sum == b) {
+        //         console.log(b + ' Là số hoàn hảo');
+        //     } else {
+        //         console.log(b + ' Không là số hoàn hảo')
+        //     }
+        // }
+        // var arr =[5,6,6,7,8,9,56,17,15];
+        // for (let j = 0; j <= arr.length; j++) {
+        //     checkNum(arr[j])
+        // }
+
+
+
+        // Sap xep mang
+        // function sapXepMang(arr, callback) {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         for (let j = i+1; j < arr.length; j++) {
+        //             if (callback(arr[i], arr[j])) {
+        //                 let temp = arr[i];
+        //                 arr[i] = arr[j];
+        //                 arr[j] = temp;
+        //             }
+        //         }
+        //     }
+        // }
+
+        // sapXepMang(arr, (n1, n2) => n1 < n2);
+        // console.log(arr)
+
+
+        // Bai 8
+        var arr =[5,6,6,7,8,9,56,17,15];
+        function tinhTong(arr) {
+            var sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+        function trungBinh() {
+            var result = tinhTong(arr) / arr.length;
+            return result;
+        }
+        let result = trungBinh(tinhTong);
+        console.log(result)
+    </script>
+
+    
+</body>
+</html>
